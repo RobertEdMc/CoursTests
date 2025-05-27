@@ -1,9 +1,9 @@
 package com.example.courstests.model
-
 import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
 
 data class DataCourse(
-    val nameCourse: String,
-    @DrawableRes val imageCourse: Int,
-    val amountCourse: Int
+    @StringRes val nameCourse: Int,
+    val amountCourse: Int,
+    @DrawableRes val imageCourse: Int
 )
