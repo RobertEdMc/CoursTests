@@ -1,33 +1,87 @@
 package com.example.courstests.data
 import com.example.courstests.R
-import com.example.courstests.model.DataCourse
+import com.example.courstests.model.CardClass
+import com.example.courstests.model.Type
 
-object DataSource {
-    val courses = listOf(
-        DataCourse(R.string.architecture, 58, R.drawable.architecture),
-        DataCourse(R.string.architecture, 58, R.drawable.architecture),
-        DataCourse(R.string.automotive, 30, R.drawable.automotive),
-        DataCourse(R.string.biology, 90, R.drawable.biology),
-        DataCourse(R.string.crafts, 121, R.drawable.crafts),
-        DataCourse(R.string.business, 78, R.drawable.business),
-        DataCourse(R.string.culinary, 118, R.drawable.culinary),
-        DataCourse(R.string.design, 423, R.drawable.design),
-        DataCourse(R.string.ecology, 28, R.drawable.ecology),
-        DataCourse(R.string.engineering, 67, R.drawable.engineering),
-        DataCourse(R.string.fashion, 92, R.drawable.fashion),
-        DataCourse(R.string.finance, 100, R.drawable.finance),
-        DataCourse(R.string.film, 165, R.drawable.film),
-        DataCourse(R.string.gaming, 37, R.drawable.gaming),
-        DataCourse(R.string.geology, 290, R.drawable.geology),
-        DataCourse(R.string.drawing, 326, R.drawable.drawing),
-        DataCourse(R.string.history, 189, R.drawable.history),
-        DataCourse(R.string.journalism, 96, R.drawable.journalism),
-        DataCourse(R.string.law, 58, R.drawable.law),
-        DataCourse(R.string.lifestyle, 305, R.drawable.lifestyle),
-        DataCourse(R.string.music, 212, R.drawable.music),
-        DataCourse(R.string.painting, 172, R.drawable.painting),
-        DataCourse(R.string.photography, 321, R.drawable.photography),
-        DataCourse(R.string.physics, 41, R.drawable.physics),
-        DataCourse(R.string.tech, 118, R.drawable.tech),
+object Data {
+
+    val choseEntree = listOf(
+
+        CardClass(
+            R.string.cauliflower,
+            R.string.whole_cauliflower_brined_roasted_and_deep_frid,
+            7.00, false,
+            Type.Entree
+        ),
+        CardClass(
+            R.string.three_bean_chili,
+            R.string.black_beans_red_beans_kidney_beans_slow_cooked_topped_with_onion,
+            4.00, false,
+            Type.Entree
+        ),
+        CardClass(
+            R.string.mushroom_pasta,
+            R.string.penne_pasta_mushroom_basil,
+            7.00, false,
+            Type.Entree
+        ),
+        CardClass(
+            R.string.spicy_black_bean_skillet,
+            R.string.seasonal_vegetables_black_beans,
+            7.00, false,
+            Type.Entree
+        ),
     )
+
+    val choseSide = listOf(
+
+        CardClass(
+            R.string.summer_salad,
+            R.string.whole_cauliflower_brined_roasted_and_deep_frid,
+            3.40, false,
+            Type.SideDish
+        ),
+        CardClass(
+            R.string.butternut_squash_soup,
+            R.string.whole_cauliflower_brined_roasted_and_deep_frid,
+            2.50, false,
+            Type.SideDish
+        ),
+        CardClass(
+            R.string.spicy_potatoes,
+            R.string.whole_cauliflower_brined_roasted_and_deep_frid,
+            5.30, false,
+            Type.SideDish
+        ),
+        CardClass(
+            R.string.cocunut_rice,
+            R.string.whole_cauliflower_brined_roasted_and_deep_frid,
+            1.30, false,
+            Type.SideDish
+        ),
+
+    )
+
+    val choseAccompaniment = listOf(
+        CardClass(
+            R.string.launch_roll,
+            R.string.whole_cauliflower_brined_roasted_and_deep_frid,
+            0.40, false,
+            Type.Accompaniment
+        ),
+        CardClass(
+            R.string.mixed_berries,
+            R.string.whole_cauliflower_brined_roasted_and_deep_frid,
+            1.00, false,
+            Type.Accompaniment
+        ),
+        CardClass(
+            R.string.pickled_veggies,
+            R.string.whole_cauliflower_brined_roasted_and_deep_frid,
+            0.50, false,
+            Type.Accompaniment
+        ),
+
+    )
+
 }
